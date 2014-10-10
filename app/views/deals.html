@@ -1,0 +1,12 @@
+<h2> Deals</h2>
+<section class='col-md-2 gust-box-shadow--default'>
+<ul class="nav nav-pills nav-stacked">
+  <li class='divider' ></li>
+  <li style='cursor: pointer' hover-show="deal" ng-repeat="deal in mainCtrl.deals">
+    {{ deal.startup }}
+  </li>
+</ul>
+</section>
+<div class='col-md-10' ui-view>
+
+</div>
