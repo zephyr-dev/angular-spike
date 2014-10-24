@@ -1,5 +1,6 @@
 angular.module('adminDashboardApp')
-  .controller('MainCtrl', function () {
+  .controller('AppCtrl', ['$scope', function($scope) {
+    $scope.name = "HEllo there!";
     this.deals = [
       { startup: 'Pug Luv', id: 1},
       { startup: "Mike's Mops", id: 2},
@@ -10,4 +11,4 @@ angular.module('adminDashboardApp')
       { startup: "ESPN Zone", id: 7},
       { startup: "Dave & Busters", id: 8}
     ]
-  });
+  }]);
